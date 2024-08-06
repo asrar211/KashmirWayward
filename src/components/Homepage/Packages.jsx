@@ -1,0 +1,60 @@
+import React from 'react';
+
+const Packages = () => {
+  return (
+    <div className='mt-20'>
+      <div className='flex justify-center items-center'>
+        <div className='bg-blue-500 w-[80px] h-[3px] rotate-90'></div>
+      </div>
+      
+      <div className='mt-10'>
+        <h1 className='absolute min-[900px]:translate-y-[-80px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-8 mt-3 text-[6rem] font-[900] text-center overflow-hidden opacity-5'>Packages</h1>
+      </div>
+      
+      <div>
+        <h1 className='text-[2rem] font-semibold text-center pt-[70px] tracking-[10px]'>Featured Packages</h1>
+      </div>
+
+      {/* Packages */}
+      <div className='flex flex-col min-[900px]:flex-row'>
+        {[
+          {
+            title: 'Gulmarg',
+            description: 'Skiing paradise with stunning snow-capped peaks.',
+            image: 'https://images.pexels.com/photos/7113988/pexels-photo-7113988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            price: '$20/p'
+          },
+          {
+            title: 'Sonamarg',
+            description: 'Scenic valley known for golden meadows.',
+            image: 'https://images.pexels.com/photos/11214807/pexels-photo-11214807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            price: '$30/p'
+          },
+          {
+            title: 'Pahalgam',
+            description: 'Serene retreat with lush green landscapes.',
+            image: 'https://images.pexels.com/photos/7562495/pexels-photo-7562495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            price: '$40/p'
+          }
+        ].map((packageItem, index) => (
+          <div key={index}>
+            <div className='mt-20 mx-6 rounded-lg shadow-xl'>
+              <img className='rounded-lg' src={packageItem.image} alt={packageItem.title} />
+            </div>
+            <div>
+              <h1 className='text-2xl tracking-widest text-center mt-5'>{packageItem.title}</h1>
+              <p className='text-center opacity-70 tracking-wider'>{packageItem.description}</p>
+              <div className='flex justify-around items-center gap-10 mt-5'>
+                <p className='tracking-wider opacity-70'>{packageItem.price}</p>
+                <button className='p-2 font-semibold cursor-pointer bg-blue-500 text-white rounded-xl'>BOOK NOW</button>
+              </div>
+            </div>
+            {index < 2 && <hr className='my-5 mx-20' />}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Packages;
