@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <div className='mt-20 '>
       <div>
-        <h1 className='absolute min-[900px]:translate-y-[-70px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-4 text-[7rem] font-[900] text-center overflow-hidden opacity-5'>Services</h1>
+        <h1 className='absolute min-[900px]:translate-y-[-70px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-6 max-[900px]:pt-5 text-[5rem] font-[900] text-center overflow-hidden opacity-5'>Services</h1>
       </div>
       <div>
         <h1 className='text-[2rem] font-semibold text-center pt-[70px] tracking-[10px]'>Services</h1>

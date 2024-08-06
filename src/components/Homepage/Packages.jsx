@@ -8,7 +8,7 @@ const Packages = () => {
       </div>
       
       <div className='mt-10'>
-        <h1 className='absolute min-[900px]:translate-y-[-80px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-8 mt-3 text-[6rem] font-[900] text-center overflow-hidden opacity-5'>Packages</h1>
+        <h1 className='absolute min-[900px]:translate-y-[-80px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-3 max-[900px]:pt-10 mt-3 text-[5rem] font-[900] text-center overflow-hidden opacity-5'>Packages</h1>
       </div>
       
       <div>
