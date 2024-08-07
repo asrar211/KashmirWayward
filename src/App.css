@@ -11,4 +11,20 @@
   }
   
 
+/* src/App.css or src/components/Features.css */
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.feature-item {
+  display: inline-block;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #fff;
+  margin: 0 8px;
+  border-radius: 0.5rem;
+}
 

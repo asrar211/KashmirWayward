@@ -1,6 +1,8 @@
 // src/components/Gallery.js
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 Modal.setAppElement('#root');
 
@@ -21,13 +23,25 @@ const Gallery = () => {
 
   const imagesToShow = showMore ? initialImages : initialImages.slice(0, 6);
 
+  // Use Intersection Observer for triggering animations
+  const { ref: galleryRef, inView: galleryInView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <div className="p-4 mt-20">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div
+          ref={galleryRef}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        >
           {imagesToShow.map((image, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+              animate={{ opacity: galleryInView ? 1 : 0, x: galleryInView ? 0 : (index % 2 === 0 ? 50 : -50) }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
               className={`overflow-hidden rounded-lg ${image.size} relative cursor-pointer`}
               onClick={() => setCurrentImage(image.src)}
             >
@@ -36,7 +50,7 @@ const Gallery = () => {
                 alt={image.alt}
                 className="w-full h-full rounded-lg object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
         {!showMore && (

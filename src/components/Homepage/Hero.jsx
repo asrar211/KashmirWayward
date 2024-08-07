@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Preloader from './Preloader'; // Adjust the path as needed
+ // Adjust the path as needed
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,9 +24,6 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    return <Preloader />;
-  }
 
   return (
     <>
