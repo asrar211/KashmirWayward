@@ -53,7 +53,8 @@ function ReviewSection() {
         <div className="rating mt-2 mb-4">
           {renderStars(reviews[currentIndex].rating)}
         </div>
-        <p>- {reviews[currentIndex].name}</p>
+        <p className='italic'>- {reviews[currentIndex].name}</p>
+        <hr />
       </motion.div>
     </div>
   );
