@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from "../../assets/logo.jpeg"
 
 const Header = () => {
 const [isMenu, setIsMenu] = useState(false)
@@ -14,11 +15,11 @@ const menuClose = () => {
 
   return (
     <>
-    <div className='min-[900px]:hidden shadow-lg'>
+    <div className='min-[900px]:hidden'>
 
-      <nav className='flex justify-between py-5 items-center px-10'>
+      <nav className='flex justify-between py-2 items-center px-10'>
         <div className='text-2xl font-semibold'>
-          <h1>Kashmir <span className='text-blue-500'>Wayward</span></h1>
+          <img className='w-[110px]  rounded-full mix-blend-color-burn' src={logo} alt="" />
         </div>
         <div onClick={menuOpen} className='cursor-pointer'>
           <div className='w-[25px] h-[3px] bg-slate-800 my-1'></div>
@@ -50,8 +51,8 @@ const menuClose = () => {
 )}
     </div>
 
-    <div className='max-[900px]:hidden shadow-md'>
-      <nav className=' py-8 px-10 flex justify-between items-center'>
+    <div className='max-[900px]:hidden '>
+      <nav className='  px-10 flex justify-between items-center'>
         <div className='font-semibold text-2xl w-[60%]'>
         <h1>Kashmir <span className='text-blue-500'>Wayward</span></h1>
         </div>
@@ -62,7 +63,7 @@ const menuClose = () => {
           <h4 className='text-l font-[500] p-1 opacity-60 hover:opacity-100 cursor-pointer ease-in duration-300'>Support</h4>
         </div>
         <div>
-          <h1 className='text-xl'>Logo</h1>
+        <img className='w-[180px] drop-shadow-lg  rounded-full mix-blend-color-burn' src={logo} alt="" />
         </div>
       </nav>
     </div>
