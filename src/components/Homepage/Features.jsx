@@ -1,8 +1,7 @@
-// src/components/Marquee.js
 import React from 'react';
 import '../../App.css';
 
-const Marquee = () => {
+const Features = () => {
   const features = [
     "Explore the beautiful valleys",
     "Luxurious stays",
@@ -30,5 +29,5 @@ const Marquee = () => {
   );
 };
 
-export default Marquee;
+export default Features;
 
