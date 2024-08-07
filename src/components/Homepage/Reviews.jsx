@@ -1,58 +1,62 @@
 // src/components/ReviewSection.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import "../../App.css";
 
-const reviews = [
-  { id: 1, name: 'John Doe', review: 'Absolutely stunning views and great hospitality!' },
-  { id: 2, name: 'Jane Smith', review: 'A wonderful experience with breathtaking scenery.' },
-  { id: 3, name: 'Alice Johnson', review: 'Perfect getaway. Highly recommend the local cuisine.' },
-  { id: 4, name: 'Bob Brown', review: 'The service was impeccable and the landscapes were mesmerizing.' },
-  { id: 5, name: 'Charlie Davis', review: 'An unforgettable trip with amazing cultural experiences.' },
-];
+function ReviewSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const ReviewSection = () => {
-  const [current, setCurrent] = useState(0);
+  const reviews = [
+    { id: 1, name: 'John Doe', review: 'Our trip with this travel company was exceptional. The guided tours were informative, and the accommodations were top-notch. Truly unforgettable!', rating: 5 },
+    { id: 2, name: 'Jane Smith', review: 'Booking with this travel agency made our vacation seamless. From stunning destinations to excellent service, every detail was handled with care and professionalism.', rating: 4 },
+    { id: 3, name: 'Alice Johnson', review: 'This travel company exceeded our expectations. Their personalized itineraries and local guides provided us with an immersive and enriching travel experience.', rating: 5 },
+    { id: 4, name: 'Bob Brown', review: 'We had a fantastic journey with this travel service. The trip was well-organized, with breathtaking sights and excellent customer service throughout our adventure.', rating: 4 },
+    { id: 5, name: 'Charlie Davis', review: 'Our experience with this travel agency was outstanding. They offered unique travel packages that allowed us to explore hidden gems and enjoy luxury accommodations.', rating: 5 },
+  ];
 
-  const nextReview = () => {
-    setCurrent((prev) => (prev + 1) % reviews.length);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    }, 5000);
 
-  const prevReview = () => {
-    setCurrent((prev) => (prev - 1 + reviews.length) % reviews.length);
+    return () => clearInterval(interval);
+  }, [reviews.length]);
+
+  // Helper function to render stars
+  const renderStars = (rating) => {
+    return Array(5)
+      .fill(0)
+      .map((_, index) => (
+        <FontAwesomeIcon
+          key={index}
+          icon={faStar}
+          className={`text-yellow-500 ${index < rating ? 'text-yellow-500' : 'text-gray-200'}`}
+        />
+      ));
   };
 
   return (
-    <div className="p-6 mt-20 bg-gray-100">
-      <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">What Our Visitors Say</h2>
-        <div className="relative flex items-center justify-center">
-          <button
-            onClick={prevReview}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-3  text-black rounded-full shadow-lg  transition-colors duration-300"
-          >
-            &lt;
-          </button>
-          <motion.div
-            className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6 mx-2"
-            key={reviews[current].id}
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
-          >
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">{reviews[current].name}</h3>
-            <p className="text-base text-gray-700">{reviews[current].review}</p>
-          </motion.div>
-          <button
-            onClick={nextReview}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-3 text-black rounded-full shadow-lg  transition-colors duration-300"
-          >
-            &gt;
-          </button>
+    <div className="review-section mt-20 py-10 bg-gray-100">
+      <motion.div
+        key={reviews[currentIndex].id}
+        className="review text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h3 className='opacity-70 text-xl px-10 min-[900px]:px-[20%]'>
+          <span className='font-bold text-5xl'>"</span> {reviews[currentIndex].review}
+        </h3>
+        <div className="rating mt-2 mb-4">
+          {renderStars(reviews[currentIndex].rating)}
         </div>
-      </div>
+        <p>- {reviews[currentIndex].name}</p>
+      </motion.div>
     </div>
   );
-};
+}
 
 export default ReviewSection;
