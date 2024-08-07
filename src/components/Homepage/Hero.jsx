@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Preloader from './Preloader'; // Adjust the path as needed
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -12,13 +13,24 @@ const buttonVariants = {
 };
 
 const Hero = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay, then hide the preloader
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the duration as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Preloader />;
+  }
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <div className='absolute top-0 w-full z-[-1]'>
+    <>
+    <div className='absolute top-0 w-full z-[-1]'>
         <motion.img
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -28,6 +40,11 @@ const Hero = () => {
           alt=""
         />
       </div>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <motion.div
         variants={textVariants}
         initial="hidden"
@@ -80,6 +97,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
     </motion.div>
+    </>
   );
 };
 
