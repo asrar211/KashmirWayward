@@ -1,68 +1,105 @@
+// src/components/PackageDetail.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Slider from 'react-slick';
+import packagesData from "../../itenaries.json";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-const PackageDetails = () => {
+const PackageDetail = () => {
   const { id } = useParams();
+  const packageDetail = packagesData.find(pkg => pkg.id === id);
 
-  const packageDetails = {
-    1: {
-        id: 1,
-        title: 'Gulmarg',
-        description: 'A snowy paradise renowned for skiing, offering breathtaking mountain views and lush meadows during summer.',
-        image: 'https://images.pexels.com/photos/7113988/pexels-photo-7113988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        price: '$20/p'
-      },
-    2: {
-        id: 2,
-        title: 'Sonamarg',
-        description: 'The "Meadow of Gold" with stunning glaciers, pristine rivers, and idyllic trekking routes.',
-        image: 'https://images.pexels.com/photos/11214807/pexels-photo-11214807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        price: '$30/p'
-      },
-    3: {
-        id: 3,
-        title: 'Pahalgam',
-        description: 'A serene retreat in Kashmir, famous for lush valleys, pine forests, and adventure activities like trekking and river rafting.',
-        image: 'https://images.pexels.com/photos/7562495/pexels-photo-7562495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        price: '$40/p'
-      }
+  if (!packageDetail) {
+    return <div>Package not found</div>;
+  }
+
+  const {
+    title,
+    description,
+    images,
+    highlights,
+    itinerary,
+    price,
+    duration,
+    inclusions,
+    exclusions,
+    contactInfo
+  } = packageDetail;
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
-  const selectedPackage = packageDetails[id];
-
   return (
-    <div className="package-details">
-      {selectedPackage ? (
-        <>
-        <div className='flex flex-col items-center py-16 pb-40 bg-gray-100'>
-        <img className='w-[70%] rounded-xl shadow-xl my-5' src={selectedPackage.image} alt="" />
-        <div className='mx-[15%]'>
-        <p className='float-right font-semibold opacity-70'>{selectedPackage.price}</p>
-        <h1 className='text-xl font-semibold'>{selectedPackage.title}</h1>
-        <p className='opacity-60 px-5 text-center my-5'>{selectedPackage.description}</p>
-        </div>
-        <div>
-            <p className='text-xl rotate-180 opacity-70 font-semibold py-2 px-4 shadow-xl mt-5 rounded-full hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>^</p>
-        </div>
-        <div className='mt-5'>
-        <a
-  href={`https://wa.me/7889789033?text=I am%20interested%20in%20booking ${selectedPackage.title} Package priced: ${selectedPackage.price}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className='bg-blue-500 p-3 text-white font-semibold rounded-full shadow-xl cursor-pointer'>
-    Book Now
-  </button>
-</a>
-        </div>
-        </div>
-          
-        </>
-      ) : (
-        <p>Package not found.</p>
-      )}
+    <div className="p-6 max-w-3xl mx-auto">
+      <h1 className="text-3xl text-center text-blue-500 font-bold mb-4">{title}</h1>
+      <Slider {...sliderSettings} className="mb-6">
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={image}
+              alt={`${title} ${index + 1}`}
+              className="w-full h-64 object-cover rounded"
+            />
+          </div>
+        ))}
+      </Slider>
+      <p className="py-4 text-center opacity-70">{description}</p>
+      <h2 className="text-2xl font-semibold mb-2 text-blue-900">Package Highlights</h2>
+      <p className='text-center font-semibold'>(depends upon package)</p>
+      <ul className="list-disc pl-6 mb-4">
+        {highlights.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <h2 className="text-2xl font-semibold mb-2 text-blue-900">Itinerary</h2>
+      <ul className="mb-4">
+        {itinerary.map((day, index) => (
+          <li key={index}>
+            <strong>Day {day.day}:</strong> {day.activities}
+          </li>
+        ))}
+      </ul>
+      <h2 className="text-2xl font-semibold mb-2 text-blue-900">Inclusions</h2>
+      <ul className="list-disc pl-6 mb-4">
+        {inclusions.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <h2 className="text-2xl font-semibold mb-2 text-blue-900">Exclusions</h2>
+      <ul className="list-disc pl-6 mb-4">
+        {exclusions.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <div className="mb-4">
+        <h2 className="text-2xl font-semibold text-blue-900">Price</h2>
+        <p className='font-semibold'>Negotiable</p>
+      </div>
+      <div className="mb-4">
+        <h2 className="text-2xl font-semibold text-blue-900">Duration</h2>
+        <p className='font-semibold'>Customizable</p>
+      </div>
+      <div className="mb-4">
+        <h2 className="text-2xl font-semibold text-blue-900">Contact Information</h2>
+        <p> <span className='font-semibold'>Phone:</span> {contactInfo.phone}</p>
+        <p><span className='font-semibold'>Email:</span> <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></p>
+      </div>
+      <button
+        className="bg-green-500 text-white px-4 py-2 rounded"
+        onClick={() => window.open(`https://wa.me/91${contactInfo.phone.slice(4)}`, "_blank")}
+      >
+        Book Now
+      </button>
     </div>
   );
 };
 
-export default PackageDetails;
+export default PackageDetail;

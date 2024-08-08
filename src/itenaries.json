@@ -1,0 +1,289 @@
+[
+     { "id": "gulmarg",
+      "title": "Gulmarg Adventure Package",
+      "description": "Experience the breathtaking beauty of Gulmarg, known for its stunning landscapes, skiing, and Gondola rides. This package includes everything you need for a memorable adventure.",
+      "images": [
+        "https://images.pexels.com/photos/8627807/pexels-photo-8627807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7113988/pexels-photo-7113988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/24513295/pexels-photo-24513295/free-photo-of-hotel-in-the-jammu-and-kashmir-valley-in-summer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "highlights": [
+        "Gondola ride to Apharwat Peak",
+        "Skiing and snowboarding",
+        "Visit to St. Mary's Church",
+        "Excursion to Khilanmarg",
+        "All meals included"
+      ],
+      "itinerary": [
+        {"day": 1, "activities": "Arrival in Gulmarg, check-in at hotel, evening at leisure."},
+        {"day": 2, "activities": "Gondola ride to Apharwat Peak, skiing, and snowboarding."},
+        {"day": 3, "activities": "Visit St. Mary's Church, explore local markets."},
+        {"day": 4, "activities": "Excursion to Khilanmarg, evening at leisure."},
+        {"day": 5, "activities": "Check-out and departure."}
+      ],
+      "price": "₹25,000 per person",
+      "duration": "5 Days / 4 Nights",
+      "inclusions": [
+        "Accommodation in a 3-star hotel",
+        "All meals (breakfast, lunch, dinner)",
+        "Transportation within Gulmarg",
+        "Gondola ride tickets",
+        "Skiing equipment rental"
+      ],
+      "exclusions": [
+        "Personal expenses",
+        "Travel insurance",
+        "Any other expenses not mentioned in inclusions"
+      ],
+      "contactInfo": {
+        "phone": "+91-9419015142",
+        "email": "info@kashmirwayward.com"
+      }
+    },
+    { "id": "sonamarg",
+      "title": "Sonamarg Scenic Package",
+      "description": "Discover the stunning meadows and glaciers of Sonamarg with this all-inclusive scenic package.",
+      "images": [
+        "https://images.pexels.com/photos/16252950/pexels-photo-16252950/free-photo-of-a-lavender-house-in-a-valley-covered-in-snow-in-gulmarg-kashmir.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://travelmykashmir.com/wp-content/uploads/2023/07/572c7ca5-6463-405f-82da-bc9c9574da03-960x536.jpg",
+        "https://m.greaterkashmir.com/sortd-service/imaginary/v22-01/jpg/large/high?url=Z3JlYXRlcmthc2htaXItc29ydGQtcHJvLXByb2Qtc29ydGQvbWVkaWE5MDU1ZWJjMC04OGNjLTExZWUtOGQ5Yi03NzE2NzIzMzU3YzQuanBn"
+      ],
+      "highlights": [
+        "Thajiwas Glacier visit",
+        "Fishing in the Sindh River",
+        "Visit to the local temple",
+        "Horse riding on meadows",
+        "All meals included"
+      ],
+      "itinerary": [
+        {"day": 1, "activities": "Arrival in Sonamarg, check-in at hotel, evening at leisure."},
+        {"day": 2, "activities": "Visit Thajiwas Glacier, explore local areas."},
+        {"day": 3, "activities": "Fishing in Sindh River, visit local temple."},
+        {"day": 4, "activities": "Horse riding on meadows, evening at leisure."},
+        {"day": 5, "activities": "Check-out and departure."}
+      ],
+      "price": "₹20,000 per person",
+      "duration": "5 Days / 4 Nights",
+      "inclusions": [
+        "Accommodation in a 3-star hotel",
+        "All meals (breakfast, lunch, dinner)",
+        "Transportation within Sonamarg",
+        "Glacier visit tickets",
+        "Horse riding"
+      ],
+      "exclusions": [
+        "Personal expenses",
+        "Travel insurance",
+        "Any other expenses not mentioned in inclusions"
+      ],
+      "contactInfo": {
+        "phone": "+91-9419015142",
+        "email": "info@kashmirwayward.com"
+      }
+    },
+     { "id": "gurez",
+      "title": "Gurez Valley Exploration",
+      "description": "Explore the untouched beauty of Gurez Valley, a hidden gem in the Himalayas.",
+      "images": [
+        "https://images.pexels.com/photos/27379157/pexels-photo-27379157/free-photo-of-village-in-gurez.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/27553750/pexels-photo-27553750/free-photo-of-gurez.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://static01.nyt.com/images/2018/09/23/travel/23Kashmir1/23Kashmir1-superJumbo.jpg"
+      ],
+      "highlights": [
+        "Scenic drive through Gurez Valley",
+        "Visit to local villages",
+        "Hiking and nature walks",
+        "Camping under the stars",
+        "All meals included"
+      ],
+      "itinerary": [
+        {"day": 1, "activities": "Arrival in Gurez, check-in at camp, evening at leisure."},
+        {"day": 2, "activities": "Scenic drive, visit local villages."},
+        {"day": 3, "activities": "Hiking and nature walks, evening campfire."},
+        {"day": 4, "activities": "Explore more of the valley, evening at leisure."},
+        {"day": 5, "activities": "Check-out and departure."}
+      ],
+      "price": "₹30,000 per person",
+      "duration": "5 Days / 4 Nights",
+      "inclusions": [
+        "Camping accommodation",
+        "All meals (breakfast, lunch, dinner)",
+        "Transportation within Gurez",
+        "Guided tours",
+        "Hiking equipment"
+      ],
+      "exclusions": [
+        "Personal expenses",
+        "Travel insurance",
+        "Any other expenses not mentioned in inclusions"
+      ],
+      "contactInfo": {
+        "phone": "+91-9419015142",
+        "email": "info@kashmirwayward.com"
+      }
+    },
+     { "id": "pahalgam",
+      "title": "Pahalgam Adventure Package",
+      "description": "Enjoy the lush meadows and scenic beauty of Pahalgam with our adventure package.",
+      "images": [
+        "https://images.pexels.com/photos/6649781/pexels-photo-6649781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/8303561/pexels-photo-8303561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/26752840/pexels-photo-26752840/free-photo-of-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "highlights": [
+        "Aru Valley visit",
+        "Betaab Valley exploration",
+        "Fishing in the Lidder River",
+        "Horse riding on meadows",
+        "All meals included"
+      ],
+      "itinerary": [
+        {"day": 1, "activities": "Arrival in Pahalgam, check-in at hotel, evening at leisure."},
+        {"day": 2, "activities": "Visit Aru Valley and Betaab Valley."},
+        {"day": 3, "activities": "Fishing in Lidder River, explore local markets."},
+        {"day": 4, "activities": "Horse riding on meadows, evening at leisure."},
+        {"day": 5, "activities": "Check-out and departure."}
+      ],
+      "price": "₹22,000 per person",
+      "duration": "5 Days / 4 Nights",
+      "inclusions": [
+        "Accommodation in a 3-star hotel",
+        "All meals (breakfast, lunch, dinner)",
+        "Transportation within Pahalgam",
+        "Valley visit tickets",
+        "Fishing equipment"
+      ],
+      "exclusions": [
+        "Personal expenses",
+        "Travel insurance",
+        "Any other expenses not mentioned in inclusions"
+      ],
+      "contactInfo": {
+        "phone": "+91-9419015142",
+        "email": "info@kashmirwayward.com"
+      }
+    },
+     { "id": "srinagar",
+      "title": "Srinagar Heritage Package",
+      "description": "Discover the rich heritage and beauty of Srinagar with this all-inclusive package.",
+      "images": [
+        "https://images.pexels.com/photos/12850735/pexels-photo-12850735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/10556845/pexels-photo-10556845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7824514/pexels-photo-7824514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "highlights": [
+        "Shikara ride on Dal Lake",
+        "Visit Mughal Gardens",
+        "Explore local markets",
+        "Stay in a houseboat",
+        "All meals included"
+      ],
+      "itinerary": [
+        {"day": 1, "activities": "Arrival in Srinagar, check-in at houseboat, evening at leisure."},
+        {"day": 2, "activities": "Shikara ride on Dal Lake, visit Mughal Gardens."},
+        {"day": 3, "activities": "Explore local markets, visit local temples."},
+        {"day": 4, "activities": "Leisure day, explore more of Srinagar."},
+        {"day": 5, "activities": "Check-out and departure."}
+      ],
+      "price": "₹18,000 per person",
+      "duration": "5 Days / 4 Nights",
+      "inclusions": [
+        "Accommodation in a houseboat",
+        "All meals (breakfast, lunch, dinner)",
+        "Shikara ride tickets",
+        "Garden and market tours",
+        "Transportation within Srinagar"
+      ],
+      "exclusions": [
+        "Personal expenses",
+        "Travel insurance",
+        "Any other expenses not mentioned in inclusions"
+      ],
+      "contactInfo": {
+        "phone": "+91-9419015142",
+        "email": "info@kashmirwayward.com"
+      }
+    },
+    { "id": "doodhpathri",
+          "title": "Doodhpathri Nature Retreat",
+          "description": "Immerse yourself in the serene meadows of Doodhpathri with our nature retreat package. This tranquil getaway offers breathtaking views, lush meadows, and a peaceful escape from the hustle and bustle of daily life.",
+          "images": [
+            "https://content.jdmagicbox.com/comp/jammu/v7/9999px191.x191.220812205439.h6v7/catalogue/doodhpathri-waterfall-point-jammu-tourist-attraction-H3xzRQv5vo.jpg",
+            "https://www.kashmirnewsobserver.com/userfiles/image/s_636346658644258550_Doodhpathri.jpg",
+            "https://kashmirmountains.com/wp-content/uploads/Doodh-Pather.jpg"
+          ],
+          "highlights": [
+            "Explore the lush meadows of Doodhpathri",
+            "Guided nature walks",
+            "Visit to local attractions",
+            "Bonfire and traditional Kashmiri meals",
+            "Optional activities like horse riding"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "activities": [
+                "Arrival in Doodhpathri and transfer to accommodation",
+                "Check-in and freshen up",
+                "Relax and explore nearby areas",
+                "Dinner at the accommodation"
+              ]
+            },
+            {
+              "day": 2,
+              "activities": [
+                "Guided tour of Doodhpathri Meadows",
+                "Lunch at a scenic spot or accommodation",
+                "Nature walk or short hike",
+                "Bonfire and traditional Kashmiri dinner"
+              ]
+            },
+            {
+              "day": 3,
+              "activities": [
+                "Visit local attractions like Doodhpathri viewpoint and natural springs",
+                "Lunch at accommodation or packed lunch",
+                "Relaxing activities or local cultural workshop",
+                "Dinner at the accommodation"
+              ]
+            },
+            {
+              "day": 4,
+              "activities": [
+                "Leisurely breakfast",
+                "Optional activities: horse riding, fishing, or relaxation",
+                "Lunch at accommodation or day out",
+                "Evening spa treatment or meditation session",
+                "Farewell dinner with special Kashmiri dish"
+              ]
+            },
+            {
+              "day": 5,
+              "activities": [
+                "Breakfast and check-out",
+                "Transfer to departure point or next destination",
+                "End of the tour and departure"
+              ]
+            }
+          ],
+          "price": "₹18,000 per person",
+          "duration": "5 Days / 4 Nights",
+          "inclusions": [
+            "Accommodation in a resort or campsite",
+            "All meals (breakfast, lunch, dinner)",
+            "Guided tours and activities",
+            "Transportation within Doodhpathri",
+            "Nature walks and hiking"
+          ],
+          "exclusions": [
+            "Personal expenses",
+            "Travel insurance",
+            "Any activities not mentioned in inclusions"
+          ],
+          "contactInfo": {
+            "phone": "+91-9419015142",
+            "email": "info@kashmirwayward.com"
+          }
+        }
+  ]
+  
