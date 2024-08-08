@@ -45,7 +45,15 @@ const PackageDetails = () => {
             <p className='text-xl rotate-180 opacity-70 font-semibold py-2 px-4 shadow-xl mt-5 rounded-full hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>^</p>
         </div>
         <div className='mt-5'>
-            <button className='bg-blue-500 p-3 text-white font-semibold rounded-full shadow-xl cursor-pointer'>Book Now</button>
+        <a
+  href={`https://wa.me/7889789033?text=I am%20interested%20in%20booking ${selectedPackage.title} Package priced: ${selectedPackage.price}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className='bg-blue-500 p-3 text-white font-semibold rounded-full shadow-xl cursor-pointer'>
+    Book Now
+  </button>
+</a>
         </div>
         </div>
           
