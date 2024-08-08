@@ -1,8 +1,11 @@
 import React from 'react'
+import AllPackages from '../components/Packages/AllPackages'
 
 const Packages = () => {
   return (
-    <div>Packages</div>
+    <div>
+      <AllPackages/>
+    </div>
   )
 }
 

@@ -47,18 +47,7 @@ const Packages = () => {
   };
 
   return (
-    <div className='mt-20'>
-      <div className='flex justify-center items-center'>
-        <div className='bg-blue-500 w-[80px] h-[3px] rotate-90'></div>
-      </div>
-      
-      <div className='mt-10'>
-        <h1 className='absolute min-[900px]:translate-y-[-80px] min-[900px]:text-[12rem] min-[900px]:right-[450px] right-3 max-[900px]:pt-10 mt-3 text-[5rem] font-[900] text-center overflow-hidden opacity-5'>Packages</h1>
-      </div>
-      
-      <div>
-        <h1 className='text-[2rem] font-semibold text-center pt-[70px] tracking-[10px]'>Featured Packages</h1>
-      </div>
+    <div className='my-10'>      
 
       {/* Packages */}
       <div className='flex flex-col min-[900px]:flex-row'>

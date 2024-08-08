@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import {Link} from "react-router-dom"
  // Adjust the path as needed
 
 const textVariants = {
@@ -54,7 +55,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 1, delay: 0.5 }}
-          className='text-[2rem] min-[900px]:text-[2.5rem] font-semibold tracking-widest'
+          className='text-[2rem] ft min-[900px]:text-[2.5rem] font-semibold tracking-widest'
         >
           Kashmir <span className='text-blue-500'>Wayward</span>
         </motion.h1>
@@ -73,6 +74,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 1.5 }}
           className='flex justify-between items-center w-full mt-10 px-[10%] min-[900px]:px-[30%] min-[1400px]:px-[40%]'
         >
+          <Link to="/packages">
           <motion.button
             variants={buttonVariants}
             initial="hidden"
@@ -82,6 +84,8 @@ const Hero = () => {
           >
             Book Now
           </motion.button>
+          </Link>
+          <Link to="/about">
           <motion.button
             variants={buttonVariants}
             initial="hidden"
@@ -91,6 +95,7 @@ const Hero = () => {
           >
             Learn More
           </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>
