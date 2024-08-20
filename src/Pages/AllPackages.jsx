@@ -1,13 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { motion, useAnimation } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import PopPackages from "../../data/Packages.json";
+import { useNavigate, useLocation } from 'react-router-dom';
+import PopPackages from "../data/Packages.json";
+import queryString from 'query-string';
 
-const Packages = () => {
+const AllPackages = () => {
   const containerRef = useRef(null);
   const controls = useAnimation();
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  // Get query parameters from the URL
+  const { destination } = queryString.parse(location.search);
 
   useEffect(() => {
     const observerOptions = {
@@ -37,10 +42,13 @@ const Packages = () => {
     navigate(`/package/${id}`);
   };
 
-  const slicedPackages = PopPackages.slice(0, 3);
+  // Filter packages based on the destination parameter
+  const filteredPackages = destination
+    ? PopPackages.filter(pack => pack.destination.toLowerCase() === destination.toLowerCase())
+    : PopPackages;
 
   return (
-    <div className='mt-20'>
+    <div className='my-20'>
       <motion.div
         ref={containerRef}
         className='flex flex-col gap-10'
@@ -48,7 +56,7 @@ const Packages = () => {
         animate={controls}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        {slicedPackages.map((pack) => (
+        {filteredPackages.map((pack) => (
           <div
             key={pack.id}
             className="mx-5 rounded-[20px] shadow-2xl cursor-pointer"
@@ -89,4 +97,4 @@ const Packages = () => {
   );
 };
 
-export default Packages;
+export default AllPackages;

@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className='flex flex-col gap-2'>
               <h4 className='mt-10 text-2xl font-black'>Contact</h4>
-              <button className='bg-[#1ABC9C] mx-[8rem] text-white font-bold py-3 rounded-md'>Email</button>
+              <button className='bg-[#1ABC9C] mx-[8rem] text-white font-bold py-3 rounded-md'><a href="mailto:Kashmirwayward@gmail.com">Mail</a></button>
               <h2 className='text-xl font-black text-white mt-5'>+91-9419015142</h2>
             </div>
         </div>

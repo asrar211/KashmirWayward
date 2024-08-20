@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Ayesha Khan",
+      "address": "Srinagar, Kashmir",
+      "review": "The trip to Pahalgam was amazing! The guides were very friendly and knowledgeable. Everything was well organized, and the scenery was breathtaking."
+    },
+    {
+      "id": 2,
+      "name": "Rahul Sharma",
+      "address": "New Delhi, India",
+      "review": "I had an unforgettable experience in Gulmarg. The skiing lessons were top-notch, and the accommodations were comfortable. Highly recommended for adventure seekers!"
+    },
+    {
+      "id": 3,
+      "name": "Fatima Sheikh",
+      "address": "Mumbai, India",
+      "review": "Gurez Valley was a hidden paradise. The serene environment and beautiful landscapes made it a perfect getaway from the hustle and bustle of city life."
+    },
+    {
+      "id": 4,
+      "name": "Sameer Qureshi",
+      "address": "Lahore, Pakistan",
+      "review": "Sonamarg was like a dream come true. The horse riding experience and the views of the glacier were mesmerizing. The tour was well managed and worth every penny."
+    },
+    {
+      "id": 5,
+      "name": "Zoya Ali",
+      "address": "Bangalore, India",
+      "review": "The Srinagar Heritage Tour was fantastic. From the Shikara ride to exploring the Mughal Gardens, everything was just perfect. The cultural insights were an added bonus."
+    }
+  ]
+  
