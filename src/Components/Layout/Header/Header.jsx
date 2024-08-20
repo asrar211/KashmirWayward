@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from '../../../assets/Logo.jpeg'
+import Logo from "../../../assets/logo.jpg"
 import { CiMenuFries } from "react-icons/ci";
 import { RxCrossCircled } from "react-icons/rx";
 
