@@ -70,10 +70,10 @@ const AllPackages = () => {
               />
             </div>
             <div className="mt-5 ml-5">
-              <h2 className="text-[1.5rem] font-bold">{pack.name}</h2>
+              <h2 className="text-[1rem] font-bold">{pack.name}</h2>
               <div className="flex justify-start items-center gap-2 my-2">
                 <CiLocationOn className="text-[#1ABC9C]" size={20} />
-                <h4 className="text-[#1ABC9C] text-[1rem]">{pack.destination}</h4>
+                <h4 className="text-[#1ABC9C] text-[.8rem]">{pack.destination}</h4>
               </div>
               <hr className="my-2 mr-5" />
               <div className="py-2">
@@ -86,7 +86,7 @@ const AllPackages = () => {
                 </button>
                 <div className="text-end">
                   <h4 className="text-[#1ABC9C]">Price</h4>
-                  <h2 className="font-bold">₹{pack.price}</h2>
+                  <h2 className="font-bold">Negotiable</h2>
                 </div>
               </div>
             </div>
