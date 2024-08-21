@@ -64,7 +64,7 @@ const Vacation = () => {
           Start Your Vacation <br />Now
         </motion.h2>
         <motion.p
-          className='text-[#107460] mx-7 mt-5'
+          className='text-[#107460] mx-7 min-[1200px]:mx-[20%] mt-5'
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
@@ -73,7 +73,7 @@ const Vacation = () => {
         </motion.p>
       </div>
       <motion.div
-        className='flex flex-col mt-10 rounded-[20px] shadow-2xl mx-5 bg-white p-10'
+        className='flex flex-col mt-10 min-[1200px]:mx-[30%] rounded-[20px] shadow-2xl mx-5 bg-white p-10'
         initial={{ opacity: 0, y: 20 }}
         animate={controls}
         transition={{ duration: 0.8, ease: 'easeOut' }}

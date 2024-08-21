@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { motion, useAnimation } from 'framer-motion';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -11,7 +11,6 @@ const AllPackages = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
-  // Get query parameters from the URL
   const { destination } = queryString.parse(location.search);
 
   useEffect(() => {
@@ -42,7 +41,6 @@ const AllPackages = () => {
     navigate(`/package/${id}`);
   };
 
-  // Filter packages based on the destination parameter
   const filteredPackages = destination
     ? PopPackages.filter(pack => pack.destination.toLowerCase() === destination.toLowerCase())
     : PopPackages;
@@ -51,7 +49,7 @@ const AllPackages = () => {
     <div className='my-20'>
       <motion.div
         ref={containerRef}
-        className='flex flex-col gap-10'
+        className='flex flex-col justify-center items-center lg:flex-wrap lg:flex-row gap-10'
         initial={{ opacity: 0, y: 20 }}
         animate={controls}
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -59,7 +57,7 @@ const AllPackages = () => {
         {filteredPackages.map((pack) => (
           <div
             key={pack.id}
-            className="mx-5 rounded-[20px] shadow-2xl cursor-pointer"
+            className="mx-5 rounded-[20px] shadow-2xl cursor-pointer lg:w-[calc(33.333%-2rem)]"
             onClick={() => handlePackageClick(pack.id)}
           >
             <div>

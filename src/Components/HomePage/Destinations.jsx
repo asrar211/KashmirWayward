@@ -55,7 +55,7 @@ const Destinations = () => {
           Travel Destinations Across World
         </motion.h2>
         <motion.p
-          className='text-center mx-7 text-[#107460] mt-5'
+          className='text-center min-[1200px]:mx-[30%] mx-7 text-[#107460] mt-5'
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
@@ -63,9 +63,9 @@ const Destinations = () => {
           We have compiled a list of top destinations across the globe, scoured the world for the most alluring and fascinating places to visit. From the beautiful beaches of the Caribbean to the majestic mountains of Europe and the vibrant cities of Asia, our destination list has something for everyone.
         </motion.p>
       </div>
-      <div className='mt-10 flex justify-center items-center'>
+      <div className='mt-10 flex  justify-center items-center'>
         <motion.img
-          className='absolute z-[-1] w-[90%] rounded-[20px] h-[15rem] shadow-2xl shadow-black'
+          className='absolute z-[-1] min-[1200px]:w-[40%]  w-[90%] rounded-[20px] h-[15rem] shadow-2xl shadow-black'
           src="https://images.unsplash.com/photo-1621232051504-dc6f30ba8bc6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGd1bG1hcmd8ZW58MHx8MHx8fDA%3D"
           alt=""
           initial={{ opacity: 0, scale: 1.1 }}

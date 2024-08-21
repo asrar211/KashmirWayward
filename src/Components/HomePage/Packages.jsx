@@ -43,7 +43,7 @@ const Packages = () => {
     <div className='mt-20'>
       <motion.div
         ref={containerRef}
-        className='flex flex-col gap-10'
+        className='flex flex-col min-[1200px]:flex-row gap-10'
         initial={{ opacity: 0, y: 20 }}
         animate={controls}
         transition={{ duration: 0.8, ease: 'easeOut' }}

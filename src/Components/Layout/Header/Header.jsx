@@ -4,6 +4,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { RxCrossCircled } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Header2 from './Header2';
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -17,7 +18,8 @@ const Header = () => {
   };
 
   return (
-    <nav>
+    <>
+    <nav className='min-[1200px]:hidden'>
       {/* Mobile Navigation */}
       <div className='flex justify-between items-center px-5 py-2 bg-[#F2F2F2]'>
         <Link to='/'><img className='w-[80px] cursor-pointer rounded-full shadow-xl h-[80px]' src={Logo} alt="Logo" /></Link>
@@ -42,6 +44,10 @@ const Header = () => {
         </motion.div>
       )}
     </nav>
+   <div className='max-[900px]:hidden'>
+   <Header2/>
+   </div>
+    </>
   );
 }
 

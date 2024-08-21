@@ -48,7 +48,7 @@ const Reviews = () => {
     <div className='mt-10 relative'>
       <div className='absolute z-[-5]'>
         <img
-          className='h-[55rem] object-cover'
+          className='h-[55rem] w-[100vw] object-cover'
           src="https://images.unsplash.com/photo-1476900543704-4312b78632f8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D"
           alt=""
         />
@@ -63,7 +63,7 @@ const Reviews = () => {
           Unforgettable Travel Experience
         </motion.h2>
         <motion.p
-          className='text-white mt-5 mx-5'
+          className='text-white min-[1200px]:mx-[30%] mt-5 mx-5'
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -83,7 +83,7 @@ const Reviews = () => {
       </div>
       <motion.div
         ref={ref}
-        className={`flex mb-24 mt-[-100px] flex-col justify-start items-start rounded-[20px] bg-[#1ABC9C] mx-5 p-10 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+        className={`flex mb-24 min-[1200px]:mx-[30%] mt-[-100px] flex-col justify-start items-start rounded-[20px] bg-[#1ABC9C] mx-5 p-10 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
         initial={{ opacity: 0, y: 20 }}
         animate={controls}
         transition={{ duration: 0.8, ease: 'easeOut' }}
