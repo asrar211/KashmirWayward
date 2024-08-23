@@ -5,12 +5,25 @@
       "destination": "Pahalgam",
       "description": "Experience the beauty of Pahalgam with this 3-day adventure package. Includes guided trekking, river rafting, and sightseeing.",
       "price": 12000,
+      "detailedDescription": "Nestled in the picturesque Lidder Valley, Pahalgam is a tranquil retreat known for its lush meadows, dense pine forests, and clear rivers. It's a popular destination for trekking, fishing, and exploring the scenic beauty of the Himalayas. The nearby Aru and Betaab valleys add to its charm, making it a perfect getaway for nature lovers.",
       "imageLink": "https://images.unsplash.com/photo-1661747340818-df15f186554e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFoYWxnYW18ZW58MHx8MHx8fDA%3D",
       "duration": "3 days",
       "highlights": [
         "Guided trekking to Betaab Valley",
         "River rafting in Lidder River",
         "Visit to Aru and Baisaran"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     },
     {
@@ -19,12 +32,25 @@
       "destination": "Gulmarg",
       "description": "A 5-day package for skiing enthusiasts in the winter wonderland of Gulmarg. Includes skiing lessons, gondola rides, and more.",
       "price": 25000,
+      "detailedDescription": "Often referred to as the Meadow of Flowers, Gulmarg is a year-round destination renowned for its stunning landscapes and world-class skiing facilities. In winter, the area transforms into a snowy paradise, attracting adventure enthusiasts. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the surrounding peaks.",
       "imageLink": "https://images.unsplash.com/photo-1690650025133-f25598a4de68?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3VsbWFyZ3xlbnwwfHwwfHx8MA%3D%3D",
       "duration": "5 days",
       "highlights": [
         "Skiing lessons with professionals",
         "Gondola ride to Apharwat Peak",
         "Visit to St. Mary's Church and Maharani Temple"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     },
     {
@@ -33,12 +59,25 @@
       "destination": "Gurez",
       "description": "Discover the hidden gem of Gurez Valley with this 4-day package. Perfect for nature lovers and those seeking tranquility.",
       "price": 15000,
+      "detailedDescription": "A remote and unspoiled valley, Gurez is a hidden gem in the Kashmir region. Its pristine beauty, characterized by rolling meadows, ancient wooden homes, and the roaring Kishanganga River, offers a unique experience for those seeking solitude and offbeat adventures. The Habba Khatoon peak and the unique culture of the Dard-Shina people add to its allure.",
       "imageLink": "https://images.unsplash.com/photo-1696492197617-ff44abdd3e1c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3VyZXp8ZW58MHx8MHx8fDA%3D",
       "duration": "4 days",
       "highlights": [
         "Explore the pristine beauty of Habba Khatoon peak",
         "Visit Dawar and Tilail villages",
         "Enjoy local cuisine and cultural experiences"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     },
     {
@@ -47,12 +86,25 @@
       "destination": "Sonamarg",
       "description": "A 3-day scenic getaway to the 'Meadow of Gold', Sonamarg. Ideal for families and couples looking to unwind in nature.",
       "price": 14000,
+      "detailedDescription": "Meaning Meadow of Gold, Sonamarg is a gateway to the majestic Thajiwas Glacier and numerous alpine lakes. The stunning vistas, lush meadows, and sparkling rivers make it a haven for trekkers and nature enthusiasts. In summer, the area is blanketed with wildflowers, enhancing its ethereal beauty.",
       "imageLink": "https://images.unsplash.com/photo-1690650248366-f7e59ba90b6b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29uYW1hcmd8ZW58MHx8MHx8fDA%3D",
       "duration": "3 days",
       "highlights": [
         "Sightseeing at Thajiwas Glacier",
         "Horse riding to Vishansar Lake",
         "Photography at Zojila Pass"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     },
     {
@@ -61,12 +113,25 @@
       "destination": "Srinagar",
       "description": "Explore the historical and cultural heritage of Srinagar in this 4-day package. Includes visits to famous gardens, lakes, and shrines.",
       "price": 18000,
+      "detailedDescription": "The summer capital of Jammu and Kashmir, Srinagar is famed for its iconic Dal Lake, houseboats, and Mughal gardens. The city's rich cultural heritage, vibrant markets, and the serene Shankaracharya Temple make it a must-visit destination.",
       "imageLink": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3JpbmFnYXJ8ZW58MHx8MHx8fDA%3D",
       "duration": "4 days",
       "highlights": [
         "Shikara ride on Dal Lake",
         "Visit to Mughal Gardens",
         "Explore the old city and Shankaracharya Temple"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     },
     {
@@ -75,12 +140,25 @@
       "destination": "Doodhpathri",
       "description": "Immerse yourself in nature with this 2-day eco-tour to Doodhpathri. Perfect for those seeking a peaceful retreat.",
       "price": 9000,
+      "detailedDescription": "Known as the Valley of Milk, Doodhpathri is a serene and less-explored destination. Its name derives from the milky appearance of its frothy streams. Surrounded by lush meadows, pine forests, and snow-capped mountains, Doodhpathri offers a peaceful retreat, perfect for picnics, nature walks, and enjoying the untouched beauty of Kashmir.",
       "imageLink": "https://images.unsplash.com/photo-1664954249116-f0827256e1a3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG9vZGhwYXRocml8ZW58MHx8MHx8fDA%3D",
       "duration": "2 days",
       "highlights": [
         "Guided nature walks",
         "Camping under the stars",
         "Visit to Tangnar and Palmaidan meadows"
+      ],
+      "included": [
+        "Accommodation",
+        "Meals",
+        "Guided Tours",
+        "Sightseeings"
+      ],
+      "excluded": [
+        "Personal expenses",
+        "Travel insurance",
+        "Additional activities",
+        "Tips and gratuities"
       ]
     }
   ]
