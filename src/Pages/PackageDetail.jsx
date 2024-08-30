@@ -17,7 +17,7 @@ const PackageDetail = () => {
   const [error, setError] = useState('');
 
   if (!packageDetail) {
-    return <p>Package not found</p>;
+    return <div className='flex justify-center items-center h-[100vh]'><p className='text-2xl font-bold'>Package not found</p>;</div>
   }
 
   const handleChange = (e) => {

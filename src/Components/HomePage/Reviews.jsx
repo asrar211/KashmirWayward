@@ -14,8 +14,8 @@ const Reviews = () => {
       setTimeout(() => {
         setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % Review.length);
         setFade(true);
-      }, 500); // Duration of the fade-out animation
-    }, 5000); // Time before showing the next review
+      }, 500); 
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, []);

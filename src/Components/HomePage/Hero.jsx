@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import packages from '../../data/Packages.json';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
